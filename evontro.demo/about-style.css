@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-gutter: 0;
+}
+
+#home {
+  background-color: #ffff;
+}
+.fa-bars {
+  color: var(--blue) !important;
+}
+.nav-list li a {
+  color: var(--black) !important;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+.nav-list li a button {
+  width: 100%;
+  height: 55px;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  color: #ffff;
+  transition: 1s ease-in;
+  background: linear-gradient(
+    0deg,
+    rgba(103, 63, 231, 1) 0%,
+    rgba(2, 40, 163, 1) 100%
+  );
+}
+.nav-list li a button:hover {
+  background: #fe4c1c;
+}
+.white {
+  color: #ffff;
+}
+#banner-section {
+  background-image: linear-gradient(
+    180deg,
+    #0090e4 0%,
+    #1b18a1 100%
+  ) !important;
+}
+.banner-section-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.banner-section-text {
+  color: #ffff;
+}
+.about-h-bg {
+  padding: 120px 0;
+  background-image: linear-gradient(100deg, #0090e4 0%, #1b18a1 99%),
+    url(./img/shape-62.png);
+  position: relative;
+  overflow: hidden;
+}
+.about-h-bg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat-x;
+  background: url(./img/shape-62.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  top: 0;
+  animation: about-h-bg-anim 30s linear infinite;
+}
+@keyframes about-h-bg-anim {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+#service-section-txt {
+  color: #fe4c1c;
+  position: relative;
+}
+#service {
+  border-bottom: 4px solid #fe4c1c;
+}
+.service-card {
+  width: 100%;
+  text-align: center;
+  max-width: 350px;
+  height: 100%;
+  position: relative;
+  z-index: 5;
+  background-color: #ffff;
+}
+.service-card::before {
+  content: "";
+  height: 200px;
+  width: 600px;
+  position: absolute;
+  background-image: linear-gradient(100deg, #0090e4 0%, #1b18a1 99%) !important;
+  border-radius: 4px 4px 100% 100%;
+  transition: all 0.4s ease-out;
+  top: 0;
+  left: -35%;
+
+  background-position: center;
+  z-index: -1;
+}
+.service-card:hover::before {
+  height: 90%;
+  border-radius: 0;
+}
+.card-link button {
+  width: 100%;
+  height: 43px;
+  font-size: 14px;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+  color: #4481eb;
+  border: none;
+  background-color: #e2ebfa;
+  align-items: center;
+  font-weight: 700;
+}
+
+.card-link button:hover {
+  background-color: #bdd3f8;
+}
+.blue-card-bg {
+  background-image: url(./img/map-pattern-1.png),
+    linear-gradient(100deg, #693fe9 0%, #0128a2 100%) !important;
+}
+.orange-card {
+  background-image: url(./img/seobin-check-bg.png);
+  background: size 100%;
+  border-radius: 25px;
+}
+.white-card {
+  height: 200px;
+  width: 300px;
+  margin: 50px 20px;
+  background-color: #f4f4f4;
+  color: black;
+}
+.white-card span {
+  color: #fe4c1c;
+}
+/*-----------------footer-----------*/
+.footer-bg {
+  background-image: url(./img/3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.footer-org-bg {
+  background-color: #fe4c1c;
+  padding: 10px 20px 30px 20px;
+  color: #ffff;
+  border-radius: 18px;
+}
+.footer-card-icon {
+  color: #ffff;
+  font-size: 40px;
+}
+.footer-cross-rotate {
+  animation: cross-rot 12s infinite linear;
+}
+@keyframes cross-rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.logo-and-info ul li a {
+  color: #fff;
+}
+
+.logo-and-info img {
+  width: 100%;
+}
+
+.footer-link ul li a {
+  text-decoration: none;
+  color: #ffff;
+  line-height: 30px;
+  font-weight: 500;
+}
+.contact-inf a {
+  text-decoration: none;
+  color: #ffff;
+}
+/*----------btn-css------------*/
+.org-btn {
+  margin-top: 10px;
+  width: 200px;
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  color: #ffff;
+  background-color: #fe4c1c;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.org-btn:hover {
+  color: #fe4c1c;
+  background-color: #ffffff;
+  border-color: #fe4c1c;
+  scale: 1.1;
+}
+.org-heading {
+  color: #fe4c1c;
+  font-size: 30px;
+  font-weight: 500;
+}
